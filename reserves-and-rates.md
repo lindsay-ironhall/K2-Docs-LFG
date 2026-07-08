@@ -1,6 +1,6 @@
 # Reserves and Interest Rates
 
-## What Is a Reserve?
+## What is a Reserve?
 
 A reserve is a liquidity pool for a single asset. When users supply USDC, it goes into the USDC reserve. When someone borrows USDC, it comes from that same reserve. Each reserve independently tracks its supply, debt, interest rates, and configuration. K2 supports up to 64 reserves simultaneously.
 
@@ -34,8 +34,8 @@ Suppliers earn a fraction of what borrowers pay. The supply rate is calculated a
 
 Interest does not update every second. Instead, K2 uses an index-based system:
 
-- Each reserve has a liquidity index (for suppliers) and a borrow index (for borrowers). Both indices grow over time and produce a compounding effect. The difference is in the math used per update: the liquidity index applies a linear approximation per interval, while the borrow index uses the full compound formula. In practice the difference is negligible for most users over typical holding periods. What matters is that both your supply balance and your debt grow over time, and neither requires any manual action.
-- When you check your balance, it is calculated as your scaled balance multiplied by the current index.
-- The index is updated on the first interaction with a reserve in any given ledger. If multiple transactions hit the same reserve in the same ledger, only the first one triggers an index update. Subsequent ones use the already-current index.
+* Each reserve has a liquidity index (for suppliers) and a borrow index (for borrowers). Both indices grow over time and produce a compounding effect. The difference is in the math used per update: the liquidity index applies a linear approximation per interval, while the borrow index uses the full compound formula. In practice the difference is negligible for most users over typical holding periods. What matters is that both your supply balance and your debt grow over time, and neither requires any manual action.
+* When you check your balance, it is calculated as your scaled balance multiplied by the current index.
+* The index is updated on the first interaction with a reserve in any given ledger. If multiple transactions hit the same reserve in the same ledger, only the first one triggers an index update. Subsequent ones use the already-current index.
 
 This is more efficient than updating every user's balance individually. One index update effectively updates everyone's balance at once.

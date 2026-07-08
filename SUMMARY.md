@@ -1,4 +1,4 @@
-# Table of Contents
+# Table of contents
 
 * [Introduction](README.md)
 * [Supplying Assets](supplying.md)
@@ -14,3 +14,4 @@
 * [DEX Integration](dex-integration.md)
 * [Security and Audits](security-and-audits.md)
 * [Glossary](glossary.md)
+* [User Guide](user-guide.md)

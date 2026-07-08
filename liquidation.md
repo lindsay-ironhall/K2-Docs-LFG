@@ -6,9 +6,9 @@ Liquidation is the protocol's safety mechanism. It protects suppliers by ensurin
 
 Liquidation becomes possible the moment your health factor falls below 1.0. This typically happens when:
 
-- The value of your collateral drops significantly
-- The value of your borrowed asset rises
-- Enough interest accrues on your debt to tip the balance
+* The value of your collateral drops significantly
+* The value of your borrowed asset rises
+* Enough interest accrues on your debt to tip the balance
 
 There is no grace period. Once the health factor falls below 1.0, a liquidator can act immediately.
 
@@ -16,13 +16,12 @@ There is no grace period. Once the health factor falls below 1.0, a liquidator c
 
 A liquidator repays up to 50% of your outstanding debt. In return, they receive an equivalent value of your collateral plus a liquidation bonus. The bonus depends on which asset is used as collateral and is set per-reserve:
 
-| Asset | Liquidation Bonus |
-|---|---|
-| USDC | 5% |
-| PYUSD | 5% |
-| XLM | 10% |
-| SolvBTC / wBTC | 10% |
-| AQUA | 15% |
+| Asset          | Liquidation Bonus |
+| -------------- | ----------------- |
+| USDC           | 5%                |
+| PYUSD          | 5%                |
+| XLM            | 10%               |
+| SolvBTC / wBTC | 10%               |
 
 Your debt is reduced and your health factor improves.
 
@@ -30,9 +29,9 @@ Your debt is reduced and your health factor improves.
 
 The full outstanding debt can be liquidated in a single call if any of the following are true:
 
-- Your health factor falls below 0.5
-- Your individual debt position is worth less than $2,000
-- Your individual collateral position is worth less than $2,000
+* Your health factor falls below 0.5
+* Your individual debt position is worth less than $2,000
+* Your individual collateral position is worth less than $2,000
 
 These conditions allow full liquidation to keep the protocol solvent and avoid dust positions.
 
@@ -50,12 +49,12 @@ Usually not. The close factor limits liquidation to 50% of your debt per transac
 
 ## How to Avoid Liquidation
 
-- Keep your health factor well above 1.0. Aim for 1.5 or higher.
-- Do not borrow the maximum allowed by your LTV.
-- Monitor your position during volatile market conditions.
-- Repay debt or add collateral when your health factor starts declining.
-- Diversify collateral across assets to reduce single-asset risk.
-- Use stablecoins as collateral for more predictable health factor behavior.
+* Keep your health factor well above 1.0. Aim for 1.5 or higher.
+* Do not borrow the maximum allowed by your LTV.
+* Monitor your position during volatile market conditions.
+* Repay debt or add collateral when your health factor starts declining.
+* Diversify collateral across assets to reduce single-asset risk.
+* Use stablecoins as collateral for more predictable health factor behavior.
 
 ## Who Can Liquidate?
 

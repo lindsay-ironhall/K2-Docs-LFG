@@ -1,14 +1,14 @@
-# K2 Protocol
+# Introduction
 
 K2 is a decentralized borrowing and lending protocol deployed on Stellar's Soroban smart contract platform. It allows anyone to supply assets to earn interest, borrow against collateral, swap collateral positions, and execute flash loans — all in a transparent, non-custodial environment.
 
 ## What K2 Does
 
-| For Suppliers | For Borrowers | For the Ecosystem |
-|---|---|---|
-| Supply assets to earn variable interest (receive kTokens) | Borrow against collateral at market-driven rates | First institutional-grade lending protocol on Stellar |
-| Withdraw your supplied assets plus all accrued interest | Flexible repayment with no lock-up periods | Composable with Stellar DEXes (Soroswap, Aquarius) |
-| Swap collateral from one asset to another without withdrawing | Flash loans for capital-efficient operations | Audited smart contracts with multi-layer security |
+| For Suppliers                                                 | For Borrowers                                    | For the Ecosystem                                     |
+| ------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------------------------- |
+| Supply assets to earn variable interest (receive aTokens)     | Borrow against collateral at market-driven rates | First institutional-grade lending protocol on Stellar |
+| Withdraw your supplied assets plus all accrued interest       | Flexible repayment with no lock-up periods       | Composable with Stellar DEXes (Soroswap, Aquarius)    |
+| Swap collateral from one asset to another without withdrawing | Flash loans for capital-efficient operations     | Audited smart contracts with multi-layer security     |
 
 ## Why Stellar and Soroban?
 
@@ -24,12 +24,12 @@ K2 is a decentralized borrowing and lending protocol deployed on Stellar's Sorob
 
 ## Protocol at a Glance
 
-| Metric | Detail |
-|---|---|
-| Architecture | Modular router pattern (Aave V3-inspired) |
-| Supported Assets | USDC, XLM, PYUSD, SolvBTC, wBTC |
-| Interest Rates | Variable, algorithmically determined by utilization |
-| Oracle System | Multi-source (Primary: Redstone, Secondary: Reflector) with circuit breakers |
-| Liquidation | Whitelisted during launch period, opens to permissionless over time |
-| Security | Professional audits completed, all critical findings remediated |
-| Network | Stellar |
+| Metric           | Detail                                                                       |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Architecture     | Modular router pattern (Aave V3-inspired)                                    |
+| Supported Assets | USDC, XLM, PYUSD, SolvBTC, wBTC                                              |
+| Interest Rates   | Variable, algorithmically determined by utilization                          |
+| Oracle System    | Multi-source (Primary: Redstone, Secondary: Reflector) with circuit breakers |
+| Liquidation      | Whitelisted during launch period, opens to permissionless over time          |
+| Security         | Professional audits completed, all critical findings remediated              |
+| Network          | Stellar                                                                      |

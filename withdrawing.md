@@ -1,11 +1,11 @@
 # Withdrawing
 
-Withdrawing lets you redeem your kTokens for the underlying asset, including any interest you have earned.
+Withdrawing lets you redeem your aTokens for the underlying asset, including any interest you have earned.
 
 ## How It Works
 
 1. Request a withdrawal of a supplied asset.
-2. K2 burns your kTokens and transfers the underlying tokens back to your wallet.
+2. K2 burns your aTokens and transfers the underlying tokens back to your wallet.
 3. The amount you receive includes your original deposit plus any accrued interest.
 
 > **Example:** You supplied 1,000 USDC six months ago. The pool has earned 3% APY. You withdraw and receive approximately 1,015 USDC.
@@ -28,4 +28,4 @@ Enter a specific amount, or select Max to withdraw everything.
 
 ### 3. Confirm the transaction
 
-Your kTokens are burned and the underlying asset is sent to your wallet.
+Your aTokens are burned and the underlying asset is sent to your wallet.

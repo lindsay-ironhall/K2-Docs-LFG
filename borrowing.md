@@ -16,20 +16,19 @@ K2 enables users to borrow assets by supplying collateral. Borrowed assets are t
 
 LTV is the maximum percentage of your deposited asset's value that you are allowed to borrow against. LTV varies by asset depending on how volatile and liquid it is.
 
-| Asset | LTV | You deposit $10,000 and can borrow up to |
-|---|---|---|
-| USDC | 80% | $8,000 |
-| PYUSD | 75% | $7,500 |
-| SolvBTC / wBTC | 70% | $7,000 |
-| XLM | 50% | $5,000 |
-| AQUA | 50% | $5,000 |
+| Asset          | LTV | You deposit $10,000 and can borrow up to |
+| -------------- | --- | ---------------------------------------- |
+| USDC           | 80% | $8,000                                   |
+| PYUSD          | 80% | $8,000                                   |
+| SolvBTC / wBTC | 70% | $7,000                                   |
+| XLM            | 65% | $6,500                                   |
 
 ## Borrowing Power
 
 If you supply multiple assets as collateral, your total borrowing power is the sum of each collateral's value multiplied by its LTV:
 
-- **Total Borrowing Power** = sum of (Collateral Value x LTV)
-- **Available to Borrow** = Total Borrowing Power minus Current Debt
+* **Total Borrowing Power** = sum of (Collateral Value x LTV)
+* **Available to Borrow** = Total Borrowing Power minus Current Debt
 
 > **Example:** $1,000 USDC at 80% LTV gives $800 borrowing power. $2,000 XLM at 50% LTV gives $1,000. Total borrowing power: $1,800. With $500 existing debt, you can borrow up to a maximum of $1,300 more.
 
@@ -45,18 +44,18 @@ The higher your health factor, the more cushion you have. The closer it gets to 
 
 When your health factor drops below 1.0, liquidators can repay a portion of your debt and seize a corresponding amount of your collateral plus a bonus. This can happen if:
 
-- The price of your collateral assets falls
-- The price of your borrowed asset rises
-- Interest accrual gradually increases your debt over time
+* The price of your collateral assets falls
+* The price of your borrowed asset rises
+* Interest accrual gradually increases your debt over time
 
 ## Tips for Safe Borrowing
 
-- Borrow well below your maximum capacity to leave room for price movements
-- Monitor your health factor regularly, especially during volatile market conditions
-- Keep additional assets ready to supply as collateral quickly if needed
-- Repay debt proactively when the market moves against your position
-- Be aware of how borrow interest accumulates over time, adding to your debt
-- Aim for a health factor of 1.5 or higher as a comfortable buffer
+* Borrow well below your maximum capacity to leave room for price movements
+* Monitor your health factor regularly, especially during volatile market conditions
+* Keep additional assets ready to supply as collateral quickly if needed
+* Repay debt proactively when the market moves against your position
+* Be aware of how borrow interest accumulates over time, adding to your debt
+* Aim for a health factor of 1.5 or higher as a comfortable buffer
 
 ## Step by Step
 
