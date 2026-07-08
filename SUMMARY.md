@@ -15,3 +15,4 @@
 * [Security and Audits](security-and-audits.md)
 * [Glossary](glossary.md)
 * [User Guide](user-guide.md)
+* [Contracts](contracts.md)
