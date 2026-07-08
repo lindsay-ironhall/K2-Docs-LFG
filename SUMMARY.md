@@ -14,5 +14,5 @@
 * [DEX Integration](dex-integration.md)
 * [Security and Audits](security-and-audits.md)
 * [Glossary](glossary.md)
-* [User Guide](user-guide.md)
+* [User Guides](user-guides.md)
 * [Contracts](contracts.md)
