@@ -14,5 +14,6 @@
 * [DEX Integration](dex-integration.md)
 * [Security and Audits](security-and-audits.md)
 * [Glossary](glossary.md)
-* [User Guides](user-guides.md)
+* [User Guides](user-guides/README.md)
+  * [Wallet Support](user-guides/wallet-support.md)
 * [Contracts](contracts.md)

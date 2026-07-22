@@ -19,7 +19,7 @@
 
 ## Reserve Token Contracts
 
-| Market  | Underlying                                                 | aToken                                                     | Debt Token                                                 |
+| Market  | Underlying                                                 | aToken                                                     | Debt Ledger                                                |
 | ------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
 | USDC    | `CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75` | `CDHRPTO3NLGQ2CV75LFV6NF6ZMXIPGPID5GTAZTEICBYLMLKJICOMFZK` | `CBN4GDHRJN7AIARTSTUD3OK7IOCU5V6HTSOTVARFUA5KVE7XSNBZUQG6` |
 | XLM     | `CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA` | `CDTHJR27QWKAPCFTZWKP7GTX3RZO7HACVAC2KLCW2RENCMOCI35ORU5K` | `CC3OKG4VDLGFBS7V6UTSJVP3YL3A4OLV63EMTNUU3MQ2AOAU4M65H7QG` |
