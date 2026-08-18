@@ -11,6 +11,8 @@
 * [Oracle and Pricing](oracle-and-pricing.md)
 * [Risk Parameters](risk-parameters.md)
 * [Fees](fees.md)
+* [Third Party Markets](third-party-markets/README.md)
+  * [Contract Addresses](third-party-markets/contract-addresses.md)
 * [DEX Integration](dex-integration.md)
 * [Security and Audits](security-and-audits.md)
 * [Glossary](glossary.md)
