@@ -18,10 +18,10 @@ The `earnusdc_composite_oracle` prices earnUSDC/USD as RedStone USDC/USD multipl
 
 ### Reserve Token Contracts
 
-| Market   | Underlying                                                 | aToken                                                     | Debt Ledger                                                |
-| -------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
-| USDC     | `CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75` | `CBUXPT7VJO2NABYDL5Q5NSHG2KNAVS5OCZQS7PXNSVTDXO5JSYB5IS7X` | `CDVYJRIAHEZWYOQUG4FDU7HZ7UU3RGRLPZ7NXQ54UBAURYXFC72KA44F` |
-| earnUSDC | `CCL3WITWFFXIHV2I52ECV5DPIEOFSTU3PBPR53ILPLF2IP5KHECXRUTY` | Pending                                                    | Pending                                                    |
+| Market     | Underlying                                                 | aToken                                                     | Debt Ledger                                                |
+| ---------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| `USDC`     | `CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75` | `CBUXPT7VJO2NABYDL5Q5NSHG2KNAVS5OCZQS7PXNSVTDXO5JSYB5IS7X` | `CDVYJRIAHEZWYOQUG4FDU7HZ7UU3RGRLPZ7NXQ54UBAURYXFC72KA44F` |
+| `earnUSDC` | `CCL3WITWFFXIHV2I52ECV5DPIEOFSTU3PBPR53ILPLF2IP5KHECXRUTY` | TBA                                                        | TBA                                                        |
 
 The keEarnUSDC aToken and its debt ledger will be added once deployed.
 
