@@ -15,7 +15,7 @@ Things to know:
 
 ## Flash Liquidation
 
-Flash liquidations are a tool for liquidators, not regular users. They allow a liquidator to repay your debt, seize your collateral, and swap it back to settle everything — all in one transaction with no upfront capital required on their part. From your perspective the outcome is the same as a standard liquidation: your debt is reduced and an equivalent value of collateral is taken, plus the liquidation bonus.
+Flash liquidations are a tool for liquidators, not regular users. They allow a liquidator to repay your debt, seize your collateral, and swap it back to settle everything, all in one transaction with no upfront capital required on their part. From your perspective the outcome is the same as a standard liquidation: your debt is reduced and an equivalent value of collateral is taken, plus the liquidation bonus.
 
 ## Supported DEXes
 

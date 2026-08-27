@@ -12,7 +12,7 @@ Supplying is the simplest way to participate in K2. Deposit a supported asset in
 
 When you deposit USDC into K2, you receive aUSDC as your receipt token at a 1:1 ratio. Deposit 100 USDC and 100 aUSDC appears in your wallet. Your balance then grows automatically as interest accrues, with no claiming or manual compounding required.
 
-The protocol tracks a liquidity index internally that records cumulative interest over time. When you check your balance, the contract multiplies your position by the current index and returns the full USDC-equivalent amount. This happens automatically — you will always see your real withdrawable balance, not a scaled internal figure.
+The protocol tracks a liquidity index internally that records cumulative interest over time. When you check your balance, the contract multiplies your position by the current index and returns the full USDC-equivalent amount. This happens automatically; you will always see your real withdrawable balance, not a scaled internal figure.
 
 **Key things to know:**
 

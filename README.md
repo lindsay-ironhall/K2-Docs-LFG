@@ -1,6 +1,6 @@
 # Introduction
 
-K2 is a decentralized borrowing and lending protocol deployed on Stellar's Soroban smart contract platform. It allows anyone to supply assets to earn interest, borrow against collateral, swap collateral positions, and execute flash loans — all in a transparent, non-custodial environment.
+K2 is a decentralized borrowing and lending protocol deployed on Stellar's Soroban smart contract platform. It allows anyone to supply assets to earn interest, borrow against collateral, swap collateral positions, and execute flash loans, all in a transparent, non-custodial environment.
 
 ## What K2 Does
 
@@ -18,7 +18,7 @@ K2 is a decentralized borrowing and lending protocol deployed on Stellar's Sorob
 
 **Purpose-built asset infrastructure.** Soroban uses the SEP-41 token standard for fungible assets, analogous to ERC-20. K2 works directly with Stellar-native tokens including XLM and Circle-issued USDC without requiring bridges for core assets. Other supported assets may be bridged from other chains and carry the associated bridge risks.
 
-**Soroban: a safer smart contract environment.** Soroban processes contract calls sequentially, preventing classic re-entrancy attacks by design — a vulnerability responsible for hundreds of millions in losses across EVM lending protocols. This is a structural guarantee, not a coding convention. Smart contract risk is never zero, but a significant attack surface present on other platforms is absent here.
+**Soroban: a safer smart contract environment.** Soroban processes contract calls sequentially, preventing classic re-entrancy attacks by design, a vulnerability responsible for hundreds of millions in losses across EVM lending protocols. This is a structural guarantee, not a coding convention. Smart contract risk is never zero, but a significant attack surface present on other platforms is absent here.
 
 **Oracle integration.** K2 uses RedStone as its primary on-chain price oracle for collateral valuation, with Reflector serving as a secondary source. Both are ecosystem-native oracle solutions on Stellar and Soroban, providing redundancy in price feeds rather than relying on a single source.
 

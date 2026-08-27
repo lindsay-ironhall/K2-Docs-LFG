@@ -2,7 +2,7 @@
 
 Some markets on K2 are deployed on K2's contracts but curated and operated by outside groups. Each one is run by a named organisation, identified in the market title, and grouped in the **Third-Party Markets** section of the app, separate from the markets K2 lists and configures itself.
 
-Access is not open. An operator must be approved by K2 before it can deploy a market on the protocol, and must meet defined requirements covering how the market will be run — how parameters are published, how the oracle is sourced, how liquidation is resourced, and what is disclosed to users. Approval covers the operator and its operating commitments. It is not a review of the market's parameters or a view on the asset.
+Access is not open. An operator must be approved by K2 before it can deploy a market on the protocol, and must meet defined requirements covering how the market will be run: how parameters are published, how the oracle is sourced, how liquidation is resourced, and what is disclosed to users. Approval covers the operator and its operating commitments. It is not a review of the market's parameters or a view on the asset.
 
 Every third-party market is an isolated market. Isolation is enforced at the contract level: collateral and debt in a third-party market cannot be combined with positions in K2's primary market, and a shortfall in one of these markets cannot reach primary market suppliers. Each market has its own reserve, its own caps, and its own oracle configuration.
 
