@@ -21,9 +21,9 @@ The `earnusdc_composite_oracle` prices earnUSDC/USD as RedStone USDC/USD multipl
 | Market     | Underlying                                                 | aToken                                                     | Debt Ledger                                                |
 | ---------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
 | `USDC`     | `CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75` | `CBUXPT7VJO2NABYDL5Q5NSHG2KNAVS5OCZQS7PXNSVTDXO5JSYB5IS7X` | `CDVYJRIAHEZWYOQUG4FDU7HZ7UU3RGRLPZ7NXQ54UBAURYXFC72KA44F` |
-| `earnUSDC` | `CCL3WITWFFXIHV2I52ECV5DPIEOFSTU3PBPR53ILPLF2IP5KHECXRUTY` | TBA                                                        | TBA                                                        |
+| `earnUSDC` | `CCL3WITWFFXIHV2I52ECV5DPIEOFSTU3PBPR53ILPLF2IP5KHECXRUTY` | CCOPG2ZQ3PRTKSBYZADZYLGE4EVXV3Q5ZEMV2PZ4ZRDV43XIESAMTM4J   | CBO4TOFTCHSZA6MR4T3W6P2JZL2RPSHECXYSKW6DTSH2DNLRYL3CJKZT   |
 
-The keEarnUSDC aToken and its debt ledger will be added once deployed.
+The keEarnUSDC aToken and its debt ledger are deployed; their addresses are listed above.
 
 ### Shared Contracts
 

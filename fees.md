@@ -4,9 +4,9 @@
 
 A percentage of all interest earned by suppliers is directed to the protocol treasury.
 
-- **Typical value:** 10 to 20%
-- **Who pays:** Effectively shared between borrowers and suppliers. Borrowers pay the full rate; suppliers receive the rate minus the reserve factor.
-- **When charged:** Continuously, as interest accrues.
+* **Typical value:** 10 to 20%
+* **Who pays:** Effectively shared between borrowers and suppliers. Borrowers pay the full rate; suppliers receive the rate minus the reserve factor.
+* **When charged:** Continuously, as interest accrues.
 
 > **Example:** Borrow rate is 10%, reserve factor is 10%. Suppliers receive 9% APY and 1% goes to the protocol.
 
@@ -14,26 +14,34 @@ A percentage of all interest earned by suppliers is directed to the protocol tre
 
 A flat fee charged on every flash loan.
 
-- **Default:** 9 basis points (0.09%)
-- **Who pays:** The flash loan borrower.
-- **When charged:** At repayment, added to the required repayment amount.
+* **Default:** 30 basis points (0.30%)
+* **Who pays:** The flash loan borrower.
+* **When charged:** At repayment, added to the required repayment amount.
 
-> **Example:** Flash borrow 1,000,000 USDC. Premium = 900 USDC. You must repay 1,000,900 USDC.
+> **Example:** Flash borrow 1,000,000 USDC. Premium = 3,000 USDC. You must repay 1,003,000 USDC.
 
 ## Liquidation Protocol Fee
 
 A portion of the liquidation bonus is claimed by the protocol.
 
-- **Default:** 0.3%
-- **Who pays:** Deducted from the collateral before transfer to the liquidator.
-- **When charged:** During each liquidation event.
+* **Default:** 0% (currently no protocol fee is charged on liquidations)
+* **Who pays:** Deducted from the collateral before transfer to the liquidator.
+* **When charged:** During each liquidation event.
+
+### Collateral Swap Fee
+
+A protocol fee applied when collateral is swapped from one asset to another.
+
+* Default: 50 basis points (0.50%) on the main market. No collateral swap fee is charged on the isolated (xSolv) and Earn markets.
+* Who pays: The user performing the collateral swap.
+* When charged: At execution of the collateral swap.
 
 ## What K2 Does Not Charge
 
-- No deposit fees. Supplying assets is free.
-- No withdrawal fees. Withdrawing your assets costs nothing beyond the standard Stellar transaction fee.
-- No repayment fees. Repaying debt has no additional charge.
-- No lock-up penalties. No fees for early repayment or withdrawal.
+* No deposit fees. Supplying assets is free.
+* No withdrawal fees. Withdrawing your assets costs nothing beyond the standard Stellar transaction fee.
+* No repayment fees. Repaying debt has no additional charge.
+* No lock-up penalties. No fees for early repayment or withdrawal.
 
 ## Stellar Network Fees
 

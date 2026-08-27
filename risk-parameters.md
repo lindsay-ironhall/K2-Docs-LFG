@@ -6,12 +6,12 @@ Each asset in K2 has a set of risk parameters that control how it can be used as
 
 **Loan-to-Value (LTV).** The maximum percentage of your collateral value you can borrow. LTV varies by asset depending on how volatile and liquid it is. Stablecoins like USDC carry higher LTVs (up to 80%) while more volatile assets like XLM sit lower (65%). The full range across supported assets is 65 to 80%.
 
-**Liquidation Threshold.** The point at which your position becomes liquidatable. Always higher than LTV, creating a safety buffer. The gap between your LTV and the liquidation threshold is your breathing room. Stablecoins have tighter thresholds (85%) while volatile assets are set lower (65%) to account for larger price swings. The full range across supported assets is 65 to 85%.
+**Liquidation Threshold.** The point at which your position becomes liquidatable. Always higher than LTV, creating a safety buffer. The gap between your LTV and the liquidation threshold is your breathing room. Stablecoins have tighter thresholds (85%) while volatile assets are set lower (75%) to account for larger price swings. The full range across supported assets is 75 to 85%.
 
 **Liquidation Bonus.** The premium a liquidator receives, paid from your seized collateral. The bonus is higher for more volatile assets, reflecting the greater risk a liquidator takes on when seizing them:
 
 * Stablecoins (USDC, PYUSD): 5%
-* XLM, SolvBTC, wBTC: 10%
+* XLM, SolvBTC: 10%
 
 
 

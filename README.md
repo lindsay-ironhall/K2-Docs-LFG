@@ -27,9 +27,9 @@ K2 is a decentralized borrowing and lending protocol deployed on Stellar's Sorob
 | Metric           | Detail                                                                       |
 | ---------------- | ---------------------------------------------------------------------------- |
 | Architecture     | Modular router pattern (Aave V3-inspired)                                    |
-| Supported Assets | USDC, XLM, PYUSD, SolvBTC, wBTC                                              |
+| Supported Assets | USDC, XLM, PYUSD, SolvBTC                                                    |
 | Interest Rates   | Variable, algorithmically determined by utilization                          |
 | Oracle System    | Multi-source (Primary: Redstone, Secondary: Reflector) with circuit breakers |
-| Liquidation      | Whitelisted during launch period, opens to permissionless over time          |
-| Security         | Professional audits completed, all critical findings remediated              |
+| Liquidation      | Permissionless (the live liquidation whitelist is currently empty)           |
+| Security         | Audited by Halborn and WatchPug, plus a Code4rena public contest             |
 | Network          | Stellar                                                                      |
