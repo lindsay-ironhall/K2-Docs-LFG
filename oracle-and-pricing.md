@@ -4,10 +4,11 @@ K2 uses a layered oracle system to resolve asset prices. For each asset, the pro
 
 1. **Manual override.** If an admin has set an active override price for an asset, it takes priority over all other sources.
 2. **Cached price.** Valid cached price data within the staleness threshold is used before querying external sources.
-3. **RedStone.** Configured as the primary data source for crypto asset pricing. RedStone delivers frequently updated, reliable data feeds including yield-bearing assets such as LSTs, LRTs, Bitcoin LSTs, and yield-accruing stablecoins.
-4. **Custom oracle.** A per-asset custom oracle, such as the composite oracles used for SolvBTC, xSolvBTC, and earnUSDC, where configured.
-5. **Reflector.** The base oracle used for assets not covered by a RedStone feed.
-6. **Fallback oracle.** A configured fallback source, used if the sources above fail to return a valid price.
+3. **Chainlink.** The primary data source for any asset with a Chainlink price feed.
+4. **RedStone.**&#x54;he secondary source for assets covered by Chainlink, and the primary source for assets that Chainlink does not cover. RedStone delivers frequently updated feeds, including yield-bearing assets such as LSTs, LRTs, Bitcoin LSTs, and yield-accruing stablecoins.
+5. **Custom oracle.** A per-asset custom oracle, such as the composite oracles used for SolvBTC, xSolvBTC, and earnUSDC, where configured.
+6. **Reflector.** The secondary source for assets that do not have a Chainlink feed.
+7. **Fallback oracle.** A configured fallback source, used if the sources above fail to return a valid price.
 
 All price data is subject to staleness thresholds. If a price exceeds its allowed age, the protocol rejects it and automatically moves to the next source in the priority order. This ensures that lending decisions are always based on current, reliable market data.
 

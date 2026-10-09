@@ -78,7 +78,7 @@ The maximum percentage of your collateral's value that you can borrow. For examp
 
 ### Oracle
 
-A service that provides real-time asset prices to the protocol. K2 uses price oracles to calculate health factors, determine liquidation amounts, and value collateral. K2 supports Reflector and RedStone oracles, with staleness checks and a circuit breaker to protect against bad data.
+A service that provides real-time asset prices to the protocol. K2 uses price oracles to calculate health factors, determine liquidation amounts, and value collateral. K2 supports Chainlink, RedStone, and Reflector oracles, with staleness checks and a circuit breaker to protect against bad data.
 
 ### Pause
 

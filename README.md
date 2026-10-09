@@ -20,16 +20,16 @@ K2 is a decentralized borrowing and lending protocol deployed on Stellar's Sorob
 
 **Soroban: a safer smart contract environment.** Soroban processes contract calls sequentially, preventing classic re-entrancy attacks by design. Re-entrancy is responsible for hundreds of millions in losses across EVM lending protocols. This is a structural guarantee, not a coding convention. Smart contract risk is never zero, but a significant attack surface present on other platforms is absent here.
 
-**Oracle integration.** K2 uses RedStone as its primary on-chain price oracle for collateral valuation, with Reflector serving as a secondary source. Both are ecosystem-native oracle solutions on Stellar and Soroban, providing redundancy in price feeds rather than relying on a single source.
+**Oracle integration.** K2 uses Chainlink as its primary on-chain price oracle for collateral valuation, with RedStone serving as the secondary source. For assets that do not have a Chainlink feed, RedStone acts as the primary source and Reflector serves as the secondary. Using multiple independent providers gives K2 redundancy in price feeds rather than relying on a single source.
 
 ## Protocol at a Glance
 
-| Metric           | Detail                                                                       |
-| ---------------- | ---------------------------------------------------------------------------- |
-| Architecture     | Modular router pattern (Aave V3-inspired)                                    |
-| Supported Assets | USDC, XLM, PYUSD, SolvBTC                                                    |
-| Interest Rates   | Variable, algorithmically determined by utilization                          |
-| Oracle System    | Multi-source (Primary: Redstone, Secondary: Reflector) with circuit breakers |
-| Liquidation      | Permissionless (the live liquidation whitelist is currently empty)           |
-| Security         | Audited by Halborn and WatchPug, plus a Code4rena public contest             |
-| Network          | Stellar                                                                      |
+| Metric           | Detail                                                                                                                                        |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Architecture     | Modular router pattern (Aave V3-inspired)                                                                                                     |
+| Supported Assets | USDC, XLM, PYUSD, SolvBTC                                                                                                                     |
+| Interest Rates   | Variable, algorithmically determined by utilization                                                                                           |
+| Oracle System    | Multi-source (Primary: Chainlink, Secondary: RedStone, with Reflector as secondary for assets without a Chainlink feed) with circuit breakers |
+| Liquidation      | Permissionless (the live liquidation whitelist is currently empty)                                                                            |
+| Security         | Audited by Halborn, WatchPug, a Code4rena public contest and finishing soon a full audit with Runtime                                         |
+| Network          | Stellar                                                                                                                                       |
