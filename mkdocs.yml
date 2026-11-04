@@ -1,5 +1,5 @@
 site_name: K2 Docs
-site_url: https://lindsay-ironhall.github.io/K2-Docs-LFG/
+site_url: https://docs.k2lend.com/
 docs_dir: _docs
 theme:
   name: material
